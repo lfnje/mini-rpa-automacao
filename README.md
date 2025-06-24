@@ -58,10 +58,15 @@ Para testar e utilizar o Mini RPA:
     * Observe o destaque visual nos elementos durante a execução.
     * Alertas aparecerão se um elemento não for encontrado durante a automação.
 
-## 🛠️ Estrutura de Base
+--- 
 
+### Estrutura da Solução
 
+<p align="center">
+    <img src="img/Estrutura de Base.png" alt="Estrutura de Solução" style="width:75%; max-width:600px;">
+</p>
 
+---
 ## Próximos Passos e Possíveis Melhorias
 
 Este é um projeto inicial e pode ser expandido de várias maneiras:
