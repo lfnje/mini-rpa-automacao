@@ -48,11 +48,11 @@ Para testar e utilizar o Mini RPA:
 * **Abrir/Fechar Painel:** Clique no ícone de hambúrguer (☰) no canto superior direito para abrir ou fechar o painel lateral do RPA.
 * **Adicionar Ação Manual:** Clique no botão "Adicionar Ação Manual" e siga os prompts para definir o tipo de ação (click, type, wait, scroll) e seus parâmetros.
 * **Usar o Inspetor:**
-    1.  Clique no botão "Ativar Inspetor".
-    2.  Passe o mouse sobre os elementos na página para vê-los destacados.
-    3.  Clique em um elemento para "selecioná-lo". O seletor CSS será exibido no painel do RPA.
-    4.  Com um elemento selecionado, você pode usar os botões "Adicionar Click Selecionado" ou "Adicionar Type Selecionado" para adicionar automaticamente a ação com o seletor daquele elemento. Para "Type", um prompt adicional pedirá o texto a digitar.
-    5.  O inspetor é automaticamente desativado após adicionar uma ação.
+    I.  Clique no botão "Ativar Inspetor".
+    II.  Passe o mouse sobre os elementos na página para vê-los destacados.
+    III.  Clique em um elemento para "selecioná-lo". O seletor CSS será exibido no painel do RPA.
+    IV.  Com um elemento selecionado, você pode usar os botões "Adicionar Click Selecionado" ou "Adicionar Type Selecionado" para adicionar automaticamente a ação com o seletor daquele elemento. Para "Type", um prompt adicional pedirá o texto a digitar.
+    V.  O inspetor é automaticamente desativado após adicionar uma ação.
 * **Remover Ação:** Clique no botão `X` ao lado de qualquer ação na lista para removê-la.
 * **Iniciar Automação:** Clique no botão "Iniciar Automação" para que o RPA execute todas as ações em sequência.
     * Observe o destaque visual nos elementos durante a execução.
