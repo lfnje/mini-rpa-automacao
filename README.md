@@ -1,8 +1,6 @@
 # Mini RPA - Automação de Interface (Challenge)
 
-![Mini RPA Screenshot](docs/mini-rpa-screenshot.png) Este projeto é um "Mini RPA" (Robotic Process Automation) construído com HTML, CSS e JavaScript puros. Ele foi desenvolvido como parte de um desafio para explorar os fundamentos da automação de interface web diretamente no navegador.
-
-O objetivo é criar uma ferramenta simples que permite registrar e executar uma sequência de ações (como cliques, digitação, esperas e rolagem) em elementos de uma página web, simulando a interação de um usuário.
+Este projeto é um "Mini RPA" (Robotic Process Automation) construído com HTML, CSS e JavaScript puros. Ele foi desenvolvido como parte de um desafio para explorar os fundamentos da automação de interface web diretamente no navegador.O objetivo é criar uma ferramenta simples que permite registrar e executar uma sequência de ações (como cliques, digitação, esperas e rolagem) em elementos de uma página web, simulando a interação de um usuário.
 
 ## 🚀 Funcionalidades Atuais
 
@@ -76,10 +74,25 @@ Este é um projeto inicial e pode ser expandido de várias maneiras:
 * **Relatórios de Execução:** Mostrar um log detalhado do que aconteceu durante a automação.
 * **Integração com Ferramentas de Desenvolvimento:** Se tornar uma extensão de navegador para interagir com qualquer página.
 
-## Contribuição
+---
 
-Contribuições são bem-vindas! Se você tiver ideias para melhorias ou encontrar bugs, sinta-se à vontade para abrir uma issue ou enviar um Pull Request.
+## 📜 Licença
 
-## Licença
+Este projeto possui todos os direitos reservados, sendo proibida a reprodução, modificação ou distribuição de seu código e conteúdo sem a prévia autorização por escrito de Luiz Filipe Nogueira. Para qualquer uso ou esclarecimento, por favor, entre em contato. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-Este projeto é de código aberto e está disponível sob a licença MIT. ---
+---
+
+## ✉️ Colaboração e Contato
+
+Contribuições são bem-vindas! Se você tiver ideias para melhorias ou encontrar bugs, sinta-se à vontade para abrir uma issue, enviar um Pull Request, ou entrar em contato em algumas das redes abaixo:
+
+* **LinkedIn:** [linkedin.com/in/luizfilipenogueira](https://www.linkedin.com/in/luizfilipenogueira/)
+* **Email:** [lfnjecorporativo@gmail.com](mailto:lfnjecorporativo@gmail.com)
+* **Instagram:** [instagram.com/_lfnje/](https://www.instagram.com/_lfnje/)
+
+---
+
+<p align="center">
+  <em>“A tecnologia não só resolve problemas, como também cria oportunidades.”</em><br>
+  <strong>Luiz Filipe Nogueira</strong>
+</p>
