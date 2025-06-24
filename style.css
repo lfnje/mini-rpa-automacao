@@ -1,0 +1,250 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    padding-left: 50px; /* Ajuste este valor para a separação desejada da esquerda. Ex: 50px, 80px, etc. */
+    background-color: #f4f7f6; /* Um cinza claro suave para o fundo */
+    color: #333;
+    line-height: 1.6;
+    /* A transição de padding-left foi removida daqui, pois o padding será fixo */
+}
+
+/* A classe body.menu-open foi removida, pois não é mais necessária para o body */
+
+
+h1, h2 {
+    color: #2c3e50; /* Um azul escuro para títulos */
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilos gerais para botões */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Azul vibrante */
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 8px; /* Espaçamento entre botões */
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul um pouco mais escuro ao passar o mouse */
+    transform: translateY(-1px); /* Pequeno efeito de elevação */
+}
+
+button:active {
+    background-color: #21618c; /* Azul ainda mais escuro ao clicar */
+    transform: translateY(0); /* Volta à posição original */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Estilos para campos de input */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    margin-top: 10px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Sombra interna para profundidade */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), 0 0 8px rgba(52, 152, 219, 0.4);
+    outline: none;
+}
+
+/* Estilos da Página de Demonstração */
+#testButton, #anotherButton {
+    background-color: #2ecc71; /* Verde para botões de teste */
+    margin-bottom: 15px;
+}
+
+#testButton:hover, #anotherButton:hover {
+    background-color: #27ae60;
+}
+
+.content-scroll-area {
+    height: 800px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+    overflow-y: auto;
+}
+
+/* Estilos do Painel RPA (AGORA COMO SIDEBAR À ESQUERDA) */
+#rpa-panel {
+    position: fixed;
+    top: 0;
+    left: -320px; /* Inicialmente fora da tela à esquerda (300px width + 20px padding) */
+    width: 300px;
+    height: 100%; /* Ocupa a altura total */
+    background-color: #ffffff;
+    border-right: 1px solid #ddd; /* Borda à direita */
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1); /* Sombra à direita */
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    transition: left 0.3s ease-in-out; /* Transição suave para abrir/fechar */
+    overflow-y: auto;
+}
+
+/* Classe para o painel quando ele está aberto */
+#rpa-panel.open {
+    left: 0; /* Move para a tela quando a classe 'open' é adicionada */
+}
+
+#rpa-panel h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #34495e;
+}
+
+/* Estilos para o botão do Menu Hambúrguer (PERMANECE NO CANTO DIREITO) */
+#menu-toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 8px; /* Continua no canto superior direito */
+    z-index: 10001; /* Acima do painel para ser clicável */
+    background-color: #3498db;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 1.0em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease;
+}
+
+#menu-toggle-btn:hover {
+    background-color: #2980b9;
+}
+
+
+/* Lista de Ações */
+#action-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 300px; /* ALTERADO: Para forçar o scroll a aparecer com mais facilidade. */
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+}
+
+#action-list li {
+    background-color: #ecf0f1;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    word-break: break-all;
+    border-left: 4px solid #3498db;
+}
+
+#action-list li:last-child {
+    margin-bottom: 0;
+}
+
+#action-list li div {
+    display: flex;
+    gap: 5px;
+}
+
+#action-list li button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    margin-right: 0;
+    background-color: #95a5a6;
+}
+
+#action-list li button:hover {
+    background-color: #7f8c8d;
+}
+
+/* Informações do Inspetor */
+#inspector-info {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#inspector-info button {
+    background-color: #27ae60;
+    margin-top: 5px;
+}
+#inspector-info button:hover {
+    background-color: #229954;
+}
+
+/* Feedback Visual (Destacando elementos) */
+.highlight-element {
+    outline: 3px solid #f39c12 !important;
+    box-shadow: 0 0 8px rgba(243, 156, 18, 0.7) !important;
+    transition: outline 0.1s ease, box-shadow 0.1s ease;
+}
+
+.selected-element-outline {
+    outline: 3px solid #e74c3c !important;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.8) !important;
+    transition: outline 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Estilo para o botão de remover ação (o 'X') */
+.remove-action-btn {
+    background-color: transparent !important;
+    color: #e74c3c !important;
+    border: none !important;
+    padding: 2px 5px !important;
+    font-size: 1.1em !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-left: 10px;
+}
+
+.remove-action-btn:hover {
+    color: #c0392b !important;
+    transform: none !important;
+}
+
+/* Media Query para telas menores (opcional, mas bom para responsividade) */
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px; /* Pode querer um padding menor em telas pequenas */
+    }
+
+    #rpa-panel {
+        width: 250px; /* Menor largura em telas pequenas */
+        left: -270px; /* Ajusta a posição inicial */
+    }
+
+    #menu-toggle-btn {
+        top: 10px;
+        right: 10px;
+    }
+}
