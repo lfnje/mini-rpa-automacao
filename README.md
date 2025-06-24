@@ -94,5 +94,5 @@ Contribuições são bem-vindas! Se você tiver ideias para melhorias ou encontr
 
 <p align="center">
   <em>“A tecnologia não só resolve problemas, como também cria oportunidades.”</em><br>
-  <strong>Luiz Filipe Nogueira</strong>
+  <strong>Luiz Filipe Nogueira de Jesus Esperança</strong>
 </p>
